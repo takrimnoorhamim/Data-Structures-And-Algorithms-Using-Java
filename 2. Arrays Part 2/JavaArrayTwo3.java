@@ -18,14 +18,17 @@ public class JavaArrayTwo3 {
         for(int i = 0; i < arr.length; i++){
 
             currentSum += arr[i];
-            
-            if(currentSum<0){
-                currentSum = 0;
-            }
 
             if(currentSum > maxSum){
                 maxSum = currentSum;
             }
+
+            if(currentSum<0){
+                currentSum = 0;
+            }
+
+            // ekhaner last 2 ta if er vetor serial maintain korte hobe, 2nd if ta age dewa jabe na
+            // karon amader emon array o thakte pare jekhane sob negative numbers sekhane ki korbe?
 
         }
 
