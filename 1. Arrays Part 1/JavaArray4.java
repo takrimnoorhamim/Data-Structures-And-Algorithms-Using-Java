@@ -18,8 +18,11 @@ public class JavaArray4{
 
 
         while (start <= end){
-
-            int mid = (start + end)/2;   // Update mid every iteration
+            
+            // Update mid every iteration
+            // int mid = (start + end)/2; // not optimized
+            int mid = start - (end-start)/2;
+            
             
             if (arr[mid] == key) {
                 System.out.println("Index: " + mid);
